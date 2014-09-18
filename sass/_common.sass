@@ -46,7 +46,12 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+=r($width)
+	@media only screen and (max-width: $width+'px')
+		@content
 
+html
+	font-size: 62.5%
 
 body
 	font-family: Arial, sans-serif 
@@ -57,26 +62,169 @@ body
 // common blocks      
 
 
+//FONTS
++font("SolomonSans Semibold", solomon_sans_semibold-webfont)
++font("SolomonSans Bold", solomon_sans_bold-webfont)
++font("SolomonSans Normal", solomon_sans_normal-webfont)
++font("SolomonSans Book", solomon_sans_book-webfont)
++font("SolomonSans Light", solomon_sans_light-webfont)
++font("Ubuntu Regular", ubuntu-r-webfont)
++font("Ubuntu Medium", ubuntu-m-webfont)
++font("Ubuntu Light", ubuntu-l-webfont)
++font("Ubuntu Bold", ubuntu-b-webfont)
 
 
 
 
+=sss
+	font-family: "SolomonSans Semibold", Arial, sans-serif
+=ssb
+	font-family: "SolomonSans Bold", Arial, sans-serif
+=ssn
+	font-family: "SolomonSans Normal", Arial, sans-serif
+=ssbook
+	font-family: "SolomonSans Book", Arial, sans-serif
+=ssl
+	font-family: "SolomonSans Light", Arial, sans-serif
+=ur
+	font-family: "Ubuntu Regular", Arial, sans-serif
+=um
+	font-family: "Ubuntu Medium", Arial, sans-serif
+=ul
+	font-family: "Ubuntu Light", Arial, sans-serif
+=ub
+	font-family: "Ubuntu Bold", Arial, sans-serif
+
+//ALL
+
+=ttu
+	text-transform: uppercase
+
+h1
+	+sss
+	color: #333333
+	letter-spacing: 0.15px
+	+fs(36)
+	font-weight: normal
+h2
+	+sss
+	color: #333333
+	letter-spacing: 0px
+	+fs(26)
+	font-weight: normal
+h3, h4, h5, h6
+	font-weight: normal
+p, ul, ol
+	+ul
+	color: #333333
+	line-height: 27px
+	letter-spacing: 0.1px
+	+fs(16)
+a
+	+um
+	+fs(16)
+	color: #ef4f50
+	letter-spacing: 0.1px
+	line-height: 27px
+	text-decoration: none
+	&:visited
+		color: #e48461
+	&:hover
+		color: #d63c2d
+
+.button, .button-form
+	border-radius: 3px
+	height: 39px
+	+fs(13)
+	+um
+	text-align: center
+	border: solid 1px #ef4f50
+	+ttu
+	padding-top: 13px
+	color: #ef4f50
+	background: none
+	width: 182px
+	display: block
+	position: relative
+	&:hover
+		+fs(14)
+		color: #ef4f50
+	&:active
+		background: #ef4f50
+		color: white
+		+fs(13)
+	&:visited
+		color: #ef4f50
+
+.button_mod-red
+	height: 37px
+	padding-top: 14px
+	display: block
+	width: 100%
+	max-width: 332px
+	background: #ef4f50
+	+ssb
+	+fs(21)
+	color: white
+	line-height: 24px
+	letter-spacing: 0.15px
+	position: relative
+	text-align: center
+	border-radius: 3px
+	border-bottom: 3px solid #d63c2d
+	i
+		display: block
+		+s(button_mod-arrow)
+		top: 17px
+		right: 21px
+		position: absolute
+	&:hover
+		+fs(22)
+		color: white
+	&:active
+		background: #d63c2d
+		border-color: #ef4f50
+		+fs(21)
+	&:visited
+		color: white
+
+.button-form
+	height: 54px
+	padding-top: 0px
+	
+input, textarea, select
+	max-width: 480px
+	width: 100%
+	border: 1px solid #bcc5c3
+	border-radius: 3px
+	+fs(13)
+	+um
+	letter-spacing: 0.15px
+	+ttu
+	padding: 0px 17px 0px 17px
+	display: inline-block
+	vertical-align: middle
+	+box
+	height: 54px
+	+placeholder-color(#333333)
+textarea
+	padding: 17px
 
 
 
+.line-t
+	display: block
+	width: 84px
+	height: 5px
+	background: #333333
+	margin: 0 auto
 
 
+.center
+	margin: 0 auto
 
-
-
-
-
-
-
-
-
-
-
+.is-right
+	float: right
 
 
 

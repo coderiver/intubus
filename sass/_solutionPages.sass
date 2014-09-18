@@ -1,0 +1,250 @@
+//solution Pages
+	//sol.blogs
+.blogs-i
+	width: 100%
+	height: 0px
+	padding-bottom: 53%
+	background: url(../img/blogs.jpg) no-repeat center center
+	background-size: cover
+.widgets	
+	.button
+		float: left
+		margin-top: 5px
+	//end sol.blogs
+	//sol. Creators
+.creators
+	text-align: center
+	//creators block menu
+.creators__menu	
+	width: 38%
+	height: 0px
+	padding-bottom: 32%
+	margin-top: 100px
+	background: url(../img/creators.png) no-repeat center center
+	background-size: cover
+	display: inline-block
+	vertical-align: middle
+	+vertical
+	position: relative
+	.creators__heading
+		display: inline-block
+		vertical-align: middle
+		+fs(22)
+		+ttu
+		+ub
+		line-height: 22px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -57px
+		margin-top: -22px
+	.creators__item
+		position: absolute
+		a
+			display: inline-block
+			vertical-align: middle
+		span
+			position: absolute
+			display: block
+			width: 110px
+			+fs(13)
+			line-height: 18px
+			+um
+			+ttu
+			text-align: center
+		&:hover
+			span
+				color: #ef4f50
+	.is-active
+		span
+			color: #ef4f50
+	.creators__blog
+		top: -30px
+		left: 50%
+		margin-left: -34px
+		a
+			+s(creators-blogs)
+		span
+			top: -55px
+			left: -20px
+	.creators__ppl
+		top: -14px
+		left: -108px
+		a
+			+s(creators-ppl)
+		span
+			top: 20px
+			left: -85px
+			width: 65px
+			display: inline-block
+			vertical-align: middle
+			text-align: right
+	.creators__net
+		top: -14px
+		right: -108px
+		a
+			+s(creators-net)
+		span
+			top: 40px
+			right: -130px
+			display: inline-block
+			vertical-align: middle
+			text-align: left
+	.creators__places
+		bottom: -14px
+		left: -108px
+		a
+			+s(creators-places)
+		span
+			top: 40px
+			left: -130px
+			display: inline-block
+			vertical-align: middle
+			text-align: right
+	.creators__fb
+		bottom: -14px
+		right: -108px
+		a
+			+s(creators-fb)
+		span
+			top: 40px
+			right: -130px
+			display: inline-block
+			vertical-align: middle
+			text-align: left
+	//creators__submenu
+.creators__submenu
+	display: none
+	text-align: center
+	li
+		display: block
+		position: relative
+		a
+			+fs(14)
+			+sss
+			letter-spacing: 0.5px
+			+ttu
+			cursor: pointer
+			&:hover
+				color: #ef4f50
+	//creators block row
+.creators__row
+	padding-top: 80px
+	+clr
+	h2
+		text-align: left
+		max-width: 400px
+		margin: 0px 
+	p
+		margin-bottom: 30px
+	.button
+		float: left
+		margin-top: 5px
+		+clr
+
+//resize
+	//max-width 800
++r(800)
+	//creators block row
+	.creators__row
+		.press__block
+			padding-bottom: 30px
+		h2
+			padding-bottom: 30px
+			float: left
+		p
+			clear: both
+			margin-bottom: 30px
+	//creators block menu
+	.creators__menu
+		.creators__item
+			span
+				width: 70px
+				+fs(10)
+				line-height: 14px
+			a
+				max-width: 61px
+				max-height: 61px
+		.creators__blog
+			top: 0px
+			left: 50%
+			margin-left: -15px
+			a
+				width: 30px
+				height: 36px
+				background: url(../img/icons/creators-blogs.png) no-repeat center center
+				background-size: cover
+			span
+				top: -35px
+				left: -20px
+		.creators__ppl
+			top: 0px
+			left: -48px
+			a
+				background: url(../img/icons/creators-ppl.png) no-repeat center center
+				background-size: cover
+			span
+				top: 3px
+				left: -72px
+				width: 65px
+				display: inline-block
+				vertical-align: middle
+				text-align: right
+		.creators__net
+			top: 0px
+			right: -48px
+			a
+				background: url(../img/icons/creators-net.png) no-repeat center center
+				background-size: cover
+			span
+				top: 15px
+				right: -75px
+				display: inline-block
+				vertical-align: middle
+				text-align: left
+		.creators__places
+			bottom: 0px
+			left: -50px
+			a
+				background: url(../img/icons/creators-places.png) no-repeat center center
+				background-size: cover
+			span
+				top: 26px
+				left: -83px
+				display: inline-block
+				vertical-align: middle
+				text-align: right
+		.creators__fb
+			bottom: 0px
+			right: -50px
+			a
+				background: url(../img/icons/creators-fb.png) no-repeat center center
+				background-size: cover
+			span
+				top: 17px
+				right: -76px
+				display: inline-block
+				vertical-align: middle
+				text-align: left
+	//max-width 600
++r(600)
+	//creators block menu (none)
+	.creators__menu
+		display: none
+	.creators__submenu
+		display: block
+		padding-top: 30px
+	//creators block row
+	.creators__row
+		padding-top: 30px
+		.press__block
+			h2
+				text-align: center
+				float: none
+				margin: 0 auto
+				padding: 0px
+			p
+				text-align: center
+			.button
+				margin: 0 auto
+				float: none

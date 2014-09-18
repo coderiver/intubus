@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script type="text/javascript"
+	  src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+	</script>
+	<!--MAP-->
+	<script type="text/javascript">
+		function initialize() {
+			var mapOptions = {
+				center: new google.maps.LatLng(37.383569,-122.012868),
+				zoom: 10,
+				scrollwheel: false,
+				zoomControl: true,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map_canvas"),
+				mapOptions);
+
+			var marker_pos_1 = new google.maps.LatLng(37.383569,-122.012868);
+			//var image = 'marker.png';
+			var marker_1 = new google.maps.Marker({
+				position: marker_pos_1,
+				map: map,
+				//icon: image
+			});
+		}
+	</script>
+	<!--/map-->
+</head>
+<body onload="initialize()">
+<!-- BEGIN  out-->
+<div class="out">
+	<div class="wrapper">
+		<!-- BEGIN header -->
+		<div class="header">
+			<div class="header__top">
+			<!--Header top-->
+				<a href="#" class="logo"><img src="img/logo-black.png" alt=""></a>
+				<ul class="menu">
+					<li class="menu-i"><a class="menu__item">Solutions</a>
+						<div class="submenu submenu_left">
+							<i></i>
+							<ul class="submenu__items">
+								<li><a href="#" class="is-first">Content holders</a></li>
+								<li><a href="#">Blogs & EDitorial</a></li>
+								<li><a href="#">creators</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu-i"><a class="menu__item">Products</a>
+						<div class="submenu submenu_center">
+							<i></i>
+							<ul class="submenu__items">
+								<li><a href="#" class="is-first">Content holders</a></li>
+								<li><a href="#">Blogs & EDitorial</a></li>
+								<li><a href="#">creators</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="menu-i"><a class="menu__item is-active">About</a>
+						<div class="submenu submenu_right">
+							<i></i>
+							<ul class="submenu__items">
+								<li><a href="#" class="is-first">Content holders</a></li>
+								<li><a href="#">Blogs & EDitorial</a></li>
+								<li><a href="#">creators</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--end Header top-->
+			<div class="header__info header__info_mod">
+				<h1>Contact</h1>
+				<p>Please enter your contact information and an Intubus 
+representative will follow up with you shortly.</p>
+			</div>
+		</div>
+		<!-- END header -->
+	</div>
+	<!-- BEGIN row -->
+	<div class="row">
+		<span class="line-t"></span>
+		<form action="" class="form">
+			<div class="form__top">
+				<h2>Send a Message</h2>
+				<a href="#" class="button button-form_mod">Press contact</a>
+			</div>
+			<input type="text" placeholder="Name">
+			<input type="text" class="is-right" placeholder="E-mail adress">
+			<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+			<input type="submit" class="button-form" value="submit">
+		</form>
+	</div>
+	<!-- END row-->
+	<!--container-->
+	<div class="container">
+		<div class="content-i">
+			<h2>440 N Wolfe Road Office 173 Sunnyvale, CA 94085</h2>
+			<div class="map" id="map_canvas"></div>
+		</div>
+	</div>
+	<!--end container-->
+	<!-- BEGIN footer -->
+	<div class="footer">
+		<!--footer-i/footer-i_top-->
+		<div class="footer-i footer-i_top">
+			<ul class="footer__menu">
+				<li class="menu__heading"><span>Solutions</span></li>
+				<li><a href="#">Creators</a></li>
+				<li><a href="#">Content Holders</a></li>
+				<li><a href="#">Bloggers</a></li>
+				<li><a href="#">Blogs & Editorial</a></li>
+			</ul>
+			<ul class="footer__menu">
+				<li class="menu__heading"><span>products</span></li>
+				<li><a href="#">Widgets</a></li>
+				<li><a href="#">AdNetwork</a></li>
+				<li><a href="#">Facebook Store</a></li>
+			</ul>
+			<ul class="footer__menu">
+				<li class="menu__heading"><span>about</span></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Press</a></li>
+			</ul>
+			<ul class="footer__menu">
+				<li class="menu__heading"><span>help desk</span></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Payments</a></li>
+			</ul>
+		</div>
+		<!--end footer-i/footer-i_top-->
+		<!--footer bot-->
+		<div class="footer-wrap">
+			<div class="footer-i footer-i_mod">
+				<div class="footer__right">
+					<span class="footer__copy">Copyright © 2014<br />
+All rights reserved.</span>
+					<a href="#" class="footer__logo"><img src="img/footer-logo.png" alt=""></a>
+				</div>
+				<a href="#" class="social-net fb"></a>
+				<a href="#" class="social-net twitter"></a>
+				<a href="#" class="social-net gplus"></a>
+			</div>
+		</div>
+		<!--end footer bot-->
+	</div>
+	<!-- END footer -->
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

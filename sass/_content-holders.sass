@@ -1,0 +1,206 @@
+.holders
+	min-height: 430px
+	//first block - holders menu
+.holders__menu
+	width: 309px
+	height: 309px
+	border: 2px solid #64b3ac
+	border-radius: 50%
+	margin: 0 auto
+	margin-top: 95px
+	position: relative
+	.holders__logo
+		position: absolute
+		top: 50%
+		margin-top: -21px
+		left: 50%
+		margin-left: -63px
+	.holders__item
+		position: absolute
+		height: 98px
+		background: white
+		width: 112px
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		+clr
+		span
+			+sss
+			position: absolute
+			+fs(13)
+			color: #333333
+			display: block
+			letter-spacing: 1px
+			+ttu
+		a
+			display: inline-block
+			vertical-align: middle
+	.holders__photo
+		top: -57px
+		left: 50%
+		margin-left: -57px
+		span
+			top: -21px
+			margin: 0 auto
+			width: 100%
+			text-align: center
+		a
+			+s(holders-photo)
+	.holders__video
+		top: 27px
+		left: -47px
+		span
+			left: -54px
+			top: 45px
+		a
+			+s(holders-video)
+	.holders__music
+		top: 24px
+		right: -40px
+		span
+			right: -60px
+			top: 43px
+		a
+			+s(holders-music)
+	.holders__papers
+		bottom: 38px
+		left: -47px
+		span
+			left: -73px
+			text-align: right
+			top: 34px
+		a
+			+s(holders-papers)
+	.holders__books
+		bottom: 37px
+		right: -46px
+		span
+			right: -59px
+			text-align: right
+			top: 46px
+		a
+			+s(holders-books)
+	.holders__design
+		bottom: -45px
+		left: 50%
+		margin-left: -57px
+		span
+			text-align: right
+			bottom: -31px
+			width: 100%
+			text-align: center
+		a
+			+s(holders-design)
+	//holders__row (press__row mod)
+.holders__row
+	h2
+		text-align: center
+		width: 100%
+		max-width: 930px
+		display: block
+		margin: 0 auto
+	p
+		margin-top: 28px
+		max-width: 380px
+	.press__block
+		padding-bottom: 60px
+	.press__block-i
+		p
+			max-width: 360px
+	//holders__button(button_mod-red)
+.holders__button
+	margin-top: 41px
+	
+
+
+
+////////////////////////////////////////
+
+
+//RESIZE
+	//max-width 800
++r(800)
+	.holders__row
+		p
+			width: 100%
+	//max-width 600
++r(600)
+	.holders
+		min-height: 250px
+		//holders menu
+	.holders__menu
+		width: 173px
+		height: 173px
+		.holders__logo
+			width: 90px
+			margin-left: -45px
+		.holders__item
+			width: 64px
+			height: 64px
+			span
+				+fs(11)
+		.holders__photo
+			margin-left: -34px
+			top: -30px
+			span
+				top: 0px
+			a
+				max-width: 49px
+				max-height: 28px
+				background: url(../img/icons/holders-photo.png) no-repeat center center
+				background-size: cover
+		.holders__video
+			top: 30px
+			left: -30px
+			span
+				left: -32px
+				top: 28px
+			a
+				max-width: 49px
+				max-height: 34px
+				background: url(../img/icons/holders-video.png) no-repeat center center
+				background-size: cover
+		.holders__music
+			top: 30px
+			right: -30px
+			span
+				right: -20px
+				top: 28px
+			a
+				max-width: 28px
+				max-height: 39px
+				background: url(../img/icons/holders-music.png) no-repeat center center
+				background-size: cover
+		.holders__papers
+			bottom: 10px
+			left: -20px
+			span
+				left: -45px
+				top: 20px
+			a
+				max-width: 33px
+				max-height: 45px
+				background: url(../img/icons/holders-papers.png) no-repeat center center
+				background-size: cover
+		.holders__books
+			bottom: 10px
+			right: -20px
+			span
+				right: -36px
+				top: 26px
+			a
+				max-width: 51px
+				max-height: 41px
+				background: url(../img/icons/holders-books.png) no-repeat center center
+				background-size: cover
+		.holders__design
+			margin-left: -32px
+			bottom: -32px
+			span
+				bottom: -15px
+			a
+				max-width: 50px
+				max-height: 50px
+				background: url(../img/icons/holders-design.png) no-repeat center center
+				background-size: cover
+	

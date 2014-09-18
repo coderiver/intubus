@@ -1,0 +1,109 @@
+//pricing page
+
+.pricing
+	padding: 21px 3.5% 70px 3.5%
+	width: 93.5%
+	//pricing blocks
+.pricing__block
+	width: 50%
+	float: left
+	text-align: center
+	position: relative
+	&:before
+		display: block
+		width: 1px
+		content: ""
+		height: 160px
+		background: #c4ccca
+		position: absolute
+		top: 110px
+		right: 0px
+	//block inner
+.pricing__block-i
+	width: 360px
+	margin: 0 auto
+	.pricing__heading
+		color: #64b3ac
+		margin-bottom: 15px
+	.pricing__block-t
+		+fs(14)
+		color: #333333
+		line-height: 18px
+		letter-spacing: 0.5px
+		+um
+		+ttu
+	.pricing__numbers
+		margin-top: 68px
+		margin-bottom: 64px
+		span
+			color: #64b3ac
+			+fs(100)
+			+ssl
+			line-height: 75px
+			position: relative
+			letter-spacing: -10px
+			display: block
+			padding-bottom: 4px
+			&:before
+				display: block
+				content: "%"
+				position: absolute
+				top: 0px
+				left: -30px
+				color: #333333
+				+fs(26)
+				+ssn
+				line-height: 49px
+		h2
+			+ssn
+	p
+		display: block
+		margin: 0 auto
+		padding-bottom: 30px
+		width: 320px
+	.button_mod-red
+		margin: 0 auto
+		margin-top: 40px
+	//pricing block modified
+.pricing__block_mod
+	float: right
+	&:before
+		display: none
+	.pricing__block-i
+		p
+			width: 350px
+		.pricing__heading
+			color: #f83928
+		.pricing__numbers
+			span
+				color: #ef4f50 
+				&:before
+					content: "$"
+			
+
+//RESIZE
+	//max-width 800
++r(800)
+	.pricing
+		width: 100%
+		padding: 30px 0px
+	//pricing blocks
+	.pricing__block
+		width: 93.5%
+		padding: 0px 3.5%
+		margin: 20px 0px
+		&:before
+			display: none
+		.pricing__block-i
+			width: 100%
+			p
+				width: 100%
+				max-width: 600px
+		.pricing__numbers
+			margin: 30px 0px
+		.button_mod-red
+			margin-top: 20px
+	//block modified
+	.pricing__block_mod
+		padding-top: 20px
+		border-top: 1px solid #c4ccca

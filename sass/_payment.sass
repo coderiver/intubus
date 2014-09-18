@@ -1,0 +1,66 @@
+.payment__block
+	margin-top: 36px
+	margin-bottom: 73px
+	width: 33%
+	display: inline-block
+	+fs(0)
+	vertical-align: middle
+	text-align: center
+	a
+		display: inline-block
+		margin: 0 auto
+		text-align: center
+	img
+		margin: 0 auto
+		display: block
+
+	//press block mod (mod width p)
+.press__block_mod
+	margin-bottom: 0px
+	p
+		max-width: 420px
+		width: 100%
+		display: block
+		padding-bottom: 30px
+	.button
+		margin-top: 3px
+		margin-bottom: 40px
+	//payment-i_s (about-i/press-i mod)
+.payment-i_s
+	margin-top: 33px	
+	//logo right
+.logos-p
+	width: 100%
+	+clr
+	text-align: center
+	margin-bottom: 138px
+	margin-top: 16px
+	a
+		display: inline-block
+		margin: 0 auto
+		text-align: center
+	img
+		margin: 0 auto
+		display: block
+	
+
+//RESIZE
+	//max-width 800
++r(800)
+	.payment__block
+		width: 100%
+		margin: 20px 0px
+	.press__block_mod
+		width: 100%
+		p
+			max-width: 100%
+	.payment-ml
+		text-align: center
+	.logos-p
+		margin: 30px 0px
+		width: 45%
+		display: inline-block
+	//max-width 460
++r(460)
+	.logos-p
+		width: 100%
