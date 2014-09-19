@@ -6,11 +6,13 @@
 	min-width: 320px
 	+clr
 .index
-	background: url(../img/index-head.jpg) no-repeat top center
+	background: url(../img/index_background_01.jpg) no-repeat top center
 	width: 100%
 	+clr
 	margin: 0 auto
 	background-color: white
+	min-height: 468px
+	position: relative
 .wrapper
 	max-width: 1048px
 	margin: 0 auto
@@ -19,6 +21,11 @@
 	
 .menu-mob
 	display: none
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	z-index: 9999
 //HEADER 	
 .header
 	width: 100%
@@ -81,6 +88,8 @@
 							&:hover
 								color: #ef4f50
 								background: white
+							&:active
+								color: #8bcfbc
 						.is-first
 							border: none
 				i
@@ -114,12 +123,15 @@
 				color: white
 	//HEADER MOD
 .header_mod
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 9
 	height: 468px
-	position: relative
 	h1
 		color: white
 		text-align: center
-		margin-top: 8.5%
+		margin-top: 7%
 	p
 		color: white
 		text-align: center
@@ -146,11 +158,11 @@
 		background: #333333
 		margin: 0 auto
 		background: white
-		margin-top: 5.7%
+		margin-top: 5%
 
 	//header-top mod
 .header__top_mod
-	padding: 4% 3.5% 2.6% 3.5%
+	padding: 40px 2.7% 26px 2.7%
 	border-bottom: 1px solid white
 //CONTAINER
 .container
@@ -216,11 +228,15 @@
 		margin: 0 auto
 		border-radius: 50%
 	.b-face
-		+s(b-face1)
-		background-color: #8bcfbc
+		background: url(../img/blogs_and_editorial_icon.svg) no-repeat center center
+		background-size: cover
+		width: 146px
+		height: 145px
 	.b-tech
-		+s(b-tech1)
-		background-color: #8bcfbc
+		background: url(../img/creators_icon.svg) no-repeat center center
+		background-size: cover
+		width: 146px
+		height: 145px
 	h2
 		+ttu
 		color: #ef4f50
@@ -526,6 +542,9 @@
 	//end footer
 	//max-width 680
 +r(680)
+	.header_mod
+		h1
+			margin-top: 123px
 	.menu-mob__top
 		border-bottom: 1px solid #bcc5c3
 		padding-bottom: 9px
@@ -557,7 +576,7 @@
 					&:hover
 						color: #ef4f50
 					&:active
-						color: #bcc5c3
+						color: #8bcfbc
 				span
 					color: #333333
 					+ssb
