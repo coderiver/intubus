@@ -7,6 +7,9 @@
 	+clr
 .index
 	background: url(../img/index-head.jpg) no-repeat top center
+	width: 100%
+	+clr
+	margin: 0 auto
 	background-color: white
 .wrapper
 	max-width: 1048px
@@ -19,9 +22,11 @@
 //HEADER 	
 .header
 	width: 100%
+	margin: 0 auto
 	//main header-top
 .header__top
 	max-width: 980px
+	margin: 0 auto
 	width: 93.5%
 	padding: 10px 3.25% 9px 3.25%
 	border-bottom: 1px solid #bcc5c3
@@ -211,9 +216,11 @@
 		margin: 0 auto
 		border-radius: 50%
 	.b-face
-		+s(b-face)
+		+s(b-face1)
+		background-color: #8bcfbc
 	.b-tech
-		+s(b-tech)
+		+s(b-tech1)
+		background-color: #8bcfbc
 	h2
 		+ttu
 		color: #ef4f50
@@ -664,6 +671,7 @@
 		.social-net
 			display: inline-block
 			margin: 2%
+			margin-top: 30px
 		.fb
 			+s(fb)
 		.twitter
