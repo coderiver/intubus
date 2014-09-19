@@ -3,7 +3,6 @@
 	background-color: white
 	width: 100%
 	margin: 0 auto
-	max-width: 1440px
 	min-width: 320px
 	+clr
 .index
@@ -15,7 +14,8 @@
 	width: 90%
 	padding: 0px 5%
 	
-
+.menu-mob
+	display: none
 //HEADER 	
 .header
 	width: 100%
@@ -37,7 +37,7 @@
 			a
 				color: #333333
 				+fs(14)
-				+sss
+				+ssb
 				letter-spacing: 0.5px
 				+ttu
 				cursor: pointer
@@ -66,7 +66,7 @@
 						a
 							padding: 13px 20px
 							width: 190px
-							+sss
+							+ssb
 							+fs(14)
 							+ttu
 							letter-spacing: 0.5px
@@ -212,10 +212,8 @@
 		border-radius: 50%
 	.b-face
 		+s(b-face)
-		background-color: #8bcfbc 
 	.b-tech
 		+s(b-tech)
-		background-color: #8bcfbc 
 	h2
 		+ttu
 		color: #ef4f50
@@ -305,7 +303,7 @@
 	.footer-i
 		width: 93.5%
 		max-width: 980px
-		padding: 43px 3.5%
+		padding: 43px 3.25%
 		margin: 0 auto
 		+clr
 	.footer-wrap
@@ -332,7 +330,7 @@
 				padding: 3px 0px 10px 0px
 				display: block
 				color: #333333
-				+sss
+				+ssb
 				+fs(14)
 				+ttu
 				letter-spacing: 0.5px
@@ -402,7 +400,7 @@
 		.footer-i
 			width: 93.5%
 			max-width: 980px
-			padding: 43px 3.5%
+			padding: 43px 3.25%
 			margin: 0 auto
 			+clr
 	//end footer
@@ -499,7 +497,7 @@
 		.footer-i
 			width: 93.5%
 			max-width: 980px
-			padding: 43px 3.5%
+			padding: 43px 3.25%
 			margin: 0 auto
 			+clr
 		.footer-i_top
@@ -521,8 +519,72 @@
 	//end footer
 	//max-width 680
 +r(680)
+	.menu-mob__top
+		border-bottom: 1px solid #bcc5c3
+		padding-bottom: 9px
+	.menu-mob
+		display: block
+		width: 93.5%
+		position: relative
+		padding: 10px 3.25% 9px 3.25%
+		i
+			+fs(25)
+			margin-top: 5px
+			float: right
+			cursor: pointer
+		.open_mod
+			color: white
+		.act
+			&:before
+				content: "\f00d"
+		.drop-m
+			padding-top: 10px
+			display: none
+			li
+				text-align: center
+				padding: 5px
+				a
+					color: #333333
+					+ssb
+					+fs(16)
+					&:hover
+						color: #ef4f50
+					&:active
+						color: #bcc5c3
+				span
+					color: #333333
+					+ssb
+					+fs(16)
+					+ttu
+					cursor: pointer
+					&:hover
+						color: #ef4f50
+					&:active
+						color: #bcc5c3
+			.is-active
+				span
+					color: #64b3ac
+					&:hover
+						color: #ef4f50
+					&:active
+						color: #bcc5c3
+			.submenu-mob
+				display: none
+		.drop-m_mod
+			position: absolute
+			top: 60px
+			width: 93.5%
+			background: #f8f9fa
+			z-index: 99999
+			padding: 10px 3.25%
+			left: 0px
+			border-radius: 2px
+			box-shadow: 0 0 5px rgba(51,51,51,.75)
 	.header
+		.header__top
+			display: none
 		.menu
+			display: none
 			width: 100%
 			float: left
 			+clr
@@ -599,7 +661,6 @@
 
 		.footer-i_mod
 			text-align: center
-			padding: 5%
 		.social-net
 			display: inline-block
 			margin: 2%
@@ -663,9 +724,9 @@
 		float: left
 		background: #f8f9fa
 		.footer-i
-			width: 90.3%
+			width: 93.5%
 			max-width: 980px
-			padding: 43px 3.5%
+			padding: 43px 3.25%
 			margin: 0 auto
 			+clr
 			.footer__menu
